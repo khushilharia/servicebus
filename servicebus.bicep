@@ -47,7 +47,7 @@ resource serviceBusTopics 'Microsoft.ServiceBus/namespaces/topics@2024-01-01' = 
     enableBatchedOperations: true     //Enables batched send/receive
     enableExpress: false    //Only valid for Standard tier
     enablePartitioning: false
-    maxMessageSizeInKilobytes: 1024     // Only valid for Premium tier
+    //maxMessageSizeInKilobytes: 1024     // Only valid for Premium tier
     maxSizeInMegabytes: 1024     // Valid values: 1024, 2048, 3072, ..., 81920 (Basic/Standard), 1024–81920 (Premium)
     requiresDuplicateDetection: false
     status: 'Active' // Valid: Active | Disabled | SendDisabled | ReceiveDisabled
